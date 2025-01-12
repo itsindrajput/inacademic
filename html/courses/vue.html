@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>LearnForward</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@600&family=Lobster+Two:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container-xxl bg-white p-0">
+      <!-- Spinner Start -->
+      <div
+        id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+      >
+        <div
+          class="spinner-border text-primary"
+          style="width: 3rem; height: 3rem"
+          role="status"
+        >
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+      <!-- Spinner End -->
+
+      <!-- Navbar Start -->
+      <nav
+        class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0"
+      >
+        <a href="index.html" class="navbar-brand">
+          <h1 class="m-0 text-primary">
+            <!-- <i class="fa fa-book-reader me-3"></i> -->
+            <img src="img/student.png" width="50px" height="50px" />LearnForward
+          </h1>
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav mx-auto">
+            <a href="index.html" class="nav-item nav-link active">Home</a>
+            <a href="roadmap.html" class="nav-item nav-link">Roadmap</a>
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                >Courses</a
+              >
+              <div
+                class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0"
+              >
+                <a href="react.html" class="dropdown-item">Frontend - React</a>
+                <a href="mern.html" class="dropdown-item">Backend - Node</a>
+                <a href="java.html" class="dropdown-item">Backend - Java</a>
+                <a href="SQL.html" class="dropdown-item">Databases & SQL</a>
+                <a href="angular.html" class="dropdown-item"
+                  >Frontend - Angular</a
+                >
+                <a href="communication-skills.html" class="dropdown-item"
+                  >Communication Skills</a
+                >
+                <a href="vue.html" class="dropdown-item"
+                  >Aptitude for Placements</a
+                >
+              </div>
+            </div>
+            <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+            <a href="about.html" class="nav-item nav-link">About Us</a>
+          </div>
+          <a
+            href="javascript:void(0)"
+            class="btn btn-primary rounded-pill px-3 d-none d-lg-block"
+            id="joinUsButton"
+          >
+            Join Us <i class="fa fa-arrow-right ms-3"></i>
+          </a>
+
+          <!-- Hidden iframe (if you want it to open in the popup instead of embedding) -->
+          <iframe
+            id="formIframe"
+            src="https://docs.google.com/forms/d/e/1FAIpQLScHrRci2k0vB-Lyo-h09OJli_QZScjC9waSpYho0_0ffhK59w/viewform?embedded=true"
+            style="display: none"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+          ></iframe>
+        </div>
+      </nav>
+      <!-- Navbar End -->
+
+      <!-- particular course start  -->
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+              <h1 class="mb-4">
+                <i class="fa-regular fa-circle-check"></i> Vue.js
+              </h1>
+              <p>
+                Take your web development skills to the next level with our
+                hands-on Vue.js course! Learn how to build modern, dynamic, and
+                responsive user interfaces using Vue.js. Whether you're a
+                beginner or an experienced developer, this course will guide you
+                through:
+              </p>
+              <ul>
+                <li>
+                  Vue.js fundamentals, including components, directives, and
+                  data binding
+                </li>
+                <li>Understanding the Vue instance and lifecycle hooks</li>
+                <li>
+                  Working with templates, conditional rendering, and lists
+                </li>
+                <li>Handling events, forms, and two-way data binding</li>
+                <li>State management with Vuex for large-scale applications</li>
+                <li>
+                  Routing with Vue Router to create single-page applications
+                  (SPAs)
+                </li>
+                <li>
+                  Building real-world Vue.js projects to reinforce your skills
+                </li>
+                <li>
+                  Best practices for organizing components and maintaining clean
+                  code
+                </li>
+              </ul>
+
+              <div class="row g-4 align-items-center">
+                <div class="col-sm-6">
+                  <button class="btn btn-primary">Buy Now</button>
+                  <button id="shareButton" class="btn btn-dark">Share</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="row">
+                <div class="col-12 text-center">
+                  <img
+                    class="img-fluid w-100 p-3"
+                    src="img/vue.png"
+                    style="width: 350px; height: 350px"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- particular course end  -->
+
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div class="row g-5 align-items-center mb-5">
+            <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
+              <h1 class="mb-4">
+                <i class="fa-regular fa-circle-check"></i>Course Offering
+              </h1>
+            </div>
+          </div>
+          <div class="row g-5 align-items-center">
+            <div
+              class="col-md-3 wow fadeInUp text-center col-6"
+              data-wow-delay="0.1s"
+            >
+              <div class="d-flex flex-column align-items-center gap-2">
+                <img
+                  src="img/offering/question_2353678.png"
+                  alt="img"
+                  style="width: 50px; height: 50px"
+                />
+                <p>Doubt Clearing Session</p>
+              </div>
+            </div>
+            <div
+              class="col-md-3 wow fadeInUp text-center col-6"
+              data-wow-delay="0.1s"
+            >
+              <div class="d-flex flex-column align-items-center gap-2">
+                <img
+                  src="img/offering/practice_10822332.png"
+                  alt="img"
+                  style="width: 50px; height: 50px"
+                />
+                <p>Practice Exercises</p>
+              </div>
+            </div>
+            <div
+              class="col-md-3 wow fadeInUp text-center col-6"
+              data-wow-delay="0.1s"
+            >
+              <div class="d-flex flex-column align-items-center gap-2">
+                <img
+                  src="img/offering/q-a_13470812.png"
+                  alt="img"
+                  style="width: 50px; height: 50px"
+                />
+                <p>Q&A</p>
+              </div>
+            </div>
+            <div
+              class="col-md-3 wow fadeInUp text-center col-6"
+              data-wow-delay="0.1s"
+            >
+              <div class="d-flex flex-column align-items-center gap-2">
+                <img
+                  src="img/offering/certificate_2912780.png"
+                  alt="img"
+                  style="width: 50px; height: 50px"
+                />
+                <p>Certification</p>
+              </div>
+            </div>
+            <div
+              class="col-md-3 wow fadeInUp text-center col-6"
+              data-wow-delay="0.1s"
+            >
+              <div class="d-flex flex-column align-items-center gap-2">
+                <img
+                  src="img/offering/headphone_16335053.png"
+                  alt="img"
+                  style="width: 50px; height: 50px"
+                />
+                <p>Email Support</p>
+              </div>
+            </div>
+            <div
+              class="col-md-3 wow fadeInUp text-center col-6"
+              data-wow-delay="0.1s"
+            >
+              <div class="d-flex flex-column align-items-center gap-2">
+                <img
+                  src="img/offering/business_13558203.png"
+                  alt="img"
+                  style="width: 50px; height: 50px"
+                />
+                <p>Mock Interview</p>
+              </div>
+            </div>
+            <div
+              class="col-md-3 wow fadeInUp text-center col-6"
+              data-wow-delay="0.1s"
+            >
+              <div class="d-flex flex-column align-items-center gap-2">
+                <img
+                  src="img/offering/assignment_16928833.png"
+                  alt="img"
+                  style="width: 50px; height: 50px"
+                />
+                <p>Assignments</p>
+              </div>
+            </div>
+            <div
+              class="col-md-3 wow fadeInUp text-center col-6"
+              data-wow-delay="0.1s"
+            >
+              <div class="d-flex flex-column align-items-center gap-2">
+                <img
+                  src="img/offering/male_3048708.png"
+                  alt="img"
+                  style="width: 50px; height: 50px"
+                />
+                <p>Instructor Led Sessions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Start -->
+      <div
+        class="container-fluid bg-dark text-white-50 footer mt-5 wow"
+        data-wow-delay="0.1s"
+      >
+        <div class="container py-5">
+          <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+              <h3 class="text-white mb-4">LearnForward</h3>
+              <p class="mb-2">
+                Are you looking to build a successful career in the tech
+                industry? Look no further! Our platform offers
+                <strong>affordable, industry-focused courses</strong> that
+                prepare you for top positions in MNCs and startups.
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLScHrRci2k0vB-Lyo-h09OJli_QZScjC9waSpYho0_0ffhK59w/viewform?embedded=true"
+                  target="_blank"
+                  class="join-btn-footer"
+                >
+                  Join Now!</a
+                >
+              </p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <h3 class="text-white mb-4">Quick Links</h3>
+              <a class="btn btn-link text-white-50" href="about.html"
+                >About Us</a
+              >
+              <a class="btn btn-link text-white-50" href="contact.html"
+                >Contact Us</a
+              >
+              <a class="btn btn-link text-white-50" href="privacy_policy.html"
+                >Privacy Policy</a
+              >
+              <a class="btn btn-link text-white-50" href="terms&condition.html"
+                >Terms & Condition</a
+              >
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <h3 class="text-white mb-4">Courses We Offer</h3>
+              <div class="row g-2 pt-2">
+                <div class="col-2 col-md-4">
+                  <a href="mern.html">
+                    <img
+                      class="img-fluid rounded bg-light p-1 footer-course-img"
+                      src="img/offering/mern-footer.png"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="col-2 col-md-4">
+                  <a href="dsa.html">
+                    <img
+                      class="img-fluid rounded bg-light p-1 footer-course-img"
+                      src="img/offering/data-structures-footer.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="col-2 col-md-4">
+                  <a href="angular.html">
+                    <img
+                      class="img-fluid rounded bg-light p-1 footer-course-img"
+                      src="img/offering/ang-footer.png"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="col-2 col-md-4">
+                  <a href="javascript-course.html">
+                    <img
+                      class="img-fluid rounded bg-light p-1 footer-course-img"
+                      src="img/offering/js2-footer.jpg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="col-2 col-md-4">
+                  <a href="java.html">
+                    <img
+                      class="img-fluid rounded bg-light p-1 footer-course-img"
+                      src="img/offering/java-footer.png"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="col-2 col-md-4">
+                  <a href="react.html">
+                    <img
+                      class="img-fluid rounded bg-light p-1 footer-course-img"
+                      src="img/offering/react-footer.png"
+                      alt=""
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <h3 class="text-white mb-4">Get In Touch</h3>
+              <!-- <p class="mb-2">
+                <i class="fa fa-map-marker-alt me-3"></i>123 Street, New York,
+                USA
+              </p> -->
+              <p class="mb-2">
+                <i class="fa fa-phone-alt me-3"></i>+91 90571 83062
+              </p>
+              <p class="mb-2">
+                <i class="fa fa-envelope me-3"></i>ummedsingh3062000.com
+              </p>
+              <div class="d-flex pt-2">
+                <a class="btn btn-outline-light btn-social" href=""
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a class="btn btn-outline-light btn-social" href=""
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a class="btn btn-outline-light btn-social" href=""
+                  ><i class="fab fa-youtube"></i
+                ></a>
+                <a class="btn btn-outline-light btn-social" href=""
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p
+          class="mb-0 align-items-center text-center"
+          style="padding-bottom: 0.5rem"
+        >
+          &copy; 2024 <strong>LearnForward</strong>. All Rights Reserved.
+        </p>
+      </div>
+      <!-- Footer End -->
+
+      <!-- Back to Top -->
+      <a
+        href="https://wa.me/1234567890?text=Hello%20there!%20How%20can%20I%20help%20you%3F"
+        target="_blank"
+        style="
+          position: fixed;
+          bottom: 100px;
+          font-size: 30px;
+          background-color: #64b161;
+          border: none;
+          border-radius: 50%;
+          z-index: 99;
+          right: 45px;
+          width: 48px;
+          height: 48px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white;
+        "
+        ><i class="fa-brands fa-whatsapp" style="color: white"></i
+      ></a>
+      <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+        ><i class="bi bi-arrow-up"></i
+      ></a>
+    </div>
+    <script>
+      const shareButton = document.getElementById("shareButton");
+
+      shareButton.addEventListener("click", async () => {
+        const currentUrl = window.location.href; // Get the current URL
+        const shareData = {
+          title: document.title, // Get the current page title
+          text: "Check out this page!",
+          url: currentUrl,
+        };
+
+        // Attempt to use the Web Share API
+        if (navigator.share) {
+          try {
+            await navigator.share(shareData);
+            console.log("URL shared successfully!");
+          } catch (err) {
+            console.error("Error sharing:", err);
+          }
+        } else {
+          // Fallback: Copy the URL to the clipboard
+          try {
+            await navigator.clipboard.writeText(currentUrl);
+            alert("URL copied to clipboard!");
+          } catch (err) {
+            console.error("Error copying URL:", err);
+            alert("Failed to copy URL. Please copy it manually: " + currentUrl);
+          }
+        }
+      });
+    </script>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="./js/functions.js"></script>
+  </body>
+</html>

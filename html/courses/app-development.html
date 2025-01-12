@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Inacademic | App Development </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta
+      content="75-Day Roadmap, Learn Computer Science Online, Coding for Beginners, Computer Science Mentorship, Online Programming Courses, Personalized Learning, Expert Mentors, Interactive Live Classes, Roadmap Program for Computer Science Students, Inacademic"
+      name="keywords"
+    />
+    <meta
+      content="Join the 75-Day CS Roadmap by Inacademic and kickstart your journey into Computer Science. Gain hands-on programming skills, personalized mentorship, and industry-recognized certifications to excel in your tech career. Enroll now and prepare for success!"
+      name="description"
+    />
+
+    <!-- Favicon -->
+    <link href="../../img/brands/student-tab.png" rel="icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&amp;family=Roboto:wght@300;400;500;700;900&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="../../lib/animate/animate.min.css" rel="stylesheet" />
+    <link
+      href="../../lib/owlcarousel/assets/owl.carousel.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="../../css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container-xxl bg-white p-0">
+      <!-- Spinner Start -->
+      <div
+        id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+      >
+        <div
+          class="spinner-border text-primary"
+          style="width: 3rem; height: 3rem"
+          role="status"
+        >
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+      <!-- Spinner End -->
+
+      <!-- Navbar Start -->
+      <nav
+        class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0"
+      >
+        <a href="../../index.html" class="navbar-brand">
+          <h1 class="m-0 text-primary">
+            <img
+              src="../../img/brands/student.png"
+              width="50px"
+              height="50px"
+            />Inacademic
+          </h1>
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav mx-auto">
+            <a href="../../index.html" class="nav-item nav-link">Home</a>
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle active"
+                data-bs-toggle="dropdown"
+                >Online Courses</a
+              >
+              <div
+                class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0"
+              >
+                <a href="../courses/react.html" class="dropdown-item"
+                  >Frontend - React</a
+                >
+                <a href="../courses/mern.html" class="dropdown-item"
+                  >Backend - Node</a
+                >
+                <a href="../courses/java-backend.html" class="dropdown-item"
+                  >Backend - Java</a
+                >
+                <a href="../courses/SQL.html" class="dropdown-item"
+                  >Databases & SQL</a
+                >
+                <a href="../courses/angular.html" class="dropdown-item"
+                  >Frontend - Angular</a
+                >
+                <a
+                  href="../courses/communication-skills.html"
+                  class="dropdown-item"
+                  >Communication Skills</a
+                >
+                <a href="../courses/aptitude.html" class="dropdown-item"
+                  >Aptitude for Placements</a
+                >
+              </div>
+            </div>
+            <a href="../../colleges/index.html" class="nav-item nav-link"
+              >Transforming Colleges</a
+            >
+            <a href="../footer/about.html" class="nav-item nav-link"
+              >About Us</a
+            >
+          </div>
+          <a
+            href="javascript:void(0)"
+            class="btn btn-primary rounded-pill px-3 d-none d-lg-block"
+            id="joinUsButton"
+          >
+            Join Us <i class="fa fa-arrow-right ms-3"></i>
+          </a>
+
+          <!-- Hidden iframe (if you want it to open in the popup instead of embedding) -->
+          <iframe
+            id="formIframe"
+            src="https://docs.google.com/forms/d/e/1FAIpQLScHrRci2k0vB-Lyo-h09OJli_QZScjC9waSpYho0_0ffhK59w/viewform?embedded=true"
+            style="display: none"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+          ></iframe>
+        </div>
+      </nav>
+      <!-- Navbar End -->
+
+      <!-- particular course start -->
+      <div class="container-xxl py-5">
+        <div class="container">
+          <div class="row g-5 align-items-center">
+            <!-- Text Content Section -->
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+              <h1 class="mb-4 fw-bold">
+                <i class="fa-regular fa-circle-check text-success"></i> 
+                Mobile App Development
+              </h1>
+              <p class="text-secondary fs-5">
+                Take your app development skills to the next level with our comprehensive course! Learn to build dynamic, scalable mobile app using modern tools and frameworks. This course is beneficial for everyone, whether you're a beginner or an experienced developer.
+
+              </p>
+              
+              <h4 class="mb-3 text-dark fw-semibold">This course will take you through:</h4>
+              <ul class="list-unstyled">
+                <li><i class="fa-solid fa-check-circle text-success me-2"></i> Understanding both frontend and backend app development technologies. </li>
+                <li><i class="fa-solid fa-check-circle text-success me-2"></i> Building user-friendly interfaces with React Native and Flutter.</li>
+                <li><i class="fa-solid fa-check-circle text-success me-2"></i>  Integrating third-party APIs and managing real-time data.</li>
+                <li><i class="fa-solid fa-check-circle text-success me-2"></i>  Managing application state and user authentication.</li>
+                <li><i class="fa-solid fa-check-circle text-success me-2"></i> Creating and managing secure databases for app data.
+                </li>
+
+                <li><i class="fa-solid fa-check-circle text-success me-2"></i> Implementing responsive designs for mobile and web platforms.
+                </li>
+                <li><i class="fa-solid fa-check-circle text-success me-2"></i>  Debugging, testing, and optimizing app performance.</li>
+                <li><i class="fa-solid fa-check-circle text-success me-2"></i>  Deploying and distributing apps on Google Play and App Store.</li>
+              </ul>
+
+              <!-- CTA Buttons -->
+              <div class="mt-4">
+                <button class="btn btn-success text-white btn-lg me-2 mb-2">Enroll Now</button>
+                <button id="shareButton" class="btn btn-outline-dark btn-lg mb-2">Share Course</button>
+              </div>
+            </div>
+
+            <!-- Image Section -->
+            <div class="col-lg-6 wow fadeInUp text-center" data-wow-delay="0.5s">
+              <div class="position-relative">
+                <img
+                  class="img-fluid rounded-3 shadow-lg"
+                  src="../../img/courses/app-development.jpg"
+                  alt="Frontend Course"
+                  style="max-width: 100%; height: auto;"
+                />
+                <div class="position-absolute top-0 start-0 bg-success text-white px-3 py-1 rounded-end">
+                  Learn Anytime, Anywhere
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- particular course end -->
+
+
+      <!-- Course Curriculum Start -->
+      <div class="container-xxl py-3 bg-white mb-5">
+        <div class="container">
+          <h2 class="text-center mb-4 fw-bold">Curriculum Overview</h2>
+          <div class="accordion" id="curriculumAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="moduleOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseModuleOne">
+                  Module 1: Introduction to Mobile App Development
+                </button>
+              </h2>
+              <div id="collapseModuleOne" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  - Understanding Mobile App Ecosystem<br />
+                  - Native vs Hybrid vs Cross-Platform Development<br />
+                  - Setting Up Development Environments (Android Studio, Xcode, VS Code)<br />
+                  - Introduction to Programming Languages (Java, Kotlin, Swift, Dart)
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="moduleTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseModuleTwo">
+                  Module 2: Frontend Development for Mobile Apps
+                </button>
+              </h2>
+              <div id="collapseModuleTwo" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  - Building User Interfaces with Flutter and React Native<br />
+                  - UI Components and Widgets<br />
+                  - State Management (Provider, Redux, Bloc)<br />
+                  - Navigation and Routing
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="moduleThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseModuleThree">
+                  Module 3: Backend Integration
+                </button>
+              </h2>
+              <div id="collapseModuleThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  - RESTful APIs and GraphQL Integration<br />
+                  - Data Storage and Retrieval (Firebase, SQLite, MongoDB)<br />
+                  - Authentication and Authorization (OAuth, JWT)<br />
+                  - Real-time Data and Cloud Functions
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="moduleFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseModuleFour">
+                  Module 4: Mobile App Security
+                </button>
+              </h2>
+              <div id="collapseModuleFour" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  - Data Encryption and Secure Storage<br />
+                  - Secure Authentication Methods<br />
+                  - Best Practices for Mobile App Security
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="moduleFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseModuleFive">
+                  Module 5: Advanced Mobile App Features
+                </button>
+              </h2>
+              <div id="collapseModuleFive" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  - Push Notifications<br />
+                  - Location Services and Maps Integration<br />
+                  - Camera and Multimedia Integration<br />
+                  - Offline Storage and Data Syncing
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="moduleSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseModuleSix">
+                  Module 6: Testing and Debugging
+                </button>
+              </h2>
+              <div id="collapseModuleSix" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  - Writing Unit and Integration Tests<br />
+                  - Debugging Tools and Techniques<br />
+                  - Performance Optimization
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="moduleSeven">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseModuleSeven">
+                  Module 7: Deployment and Publishing
+                </button>
+              </h2>
+              <div id="collapseModuleSeven" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  - Building and Packaging Apps<br />
+                  - Publishing on Google Play Store and Apple App Store<br />
+                  - App Store Guidelines and Best Practices
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="moduleEight">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseModuleEight">
+                  Module 8: Project Work
+                </button>
+              </h2>
+              <div id="collapseModuleEight" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  - Build and Deploy a Complete Mobile Application<br />
+                  - Real-World Project with Industry-Standard Practices<br />
+                  - Presentation and Feedback Session
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Course Curriculum End -->
+
+
+      <div class="container-xxl py-5 mt-4" style="background: linear-gradient(135deg, #eff3f9, #f8f8ef);">
+        <div class="container">
+          <div class="row g-5 align-items-center mb-4">
+            <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
+              <h1 class="mb-4 text-center">
+                Course Offering
+              </h1>
+            </div>
+          </div>
+          <div class="row g-5 align-items-center">
+            <div
+              class="col-md-3 wow fadeInUp text-center col-6"
+              data-wow-delay="0.1s"
+            >
+              <div class="d-flex flex-column align-items-center gap-2">
+                <img
+                  src="../../img/offering/question.png"
+                  alt="img"
+                  style="width: 50px; height: 50px"
+                />
+                <p>Doubt Clearing Session</p>
+              </div>
+            </div>
+            <div
+              class="col-md-3 wow fadeInUp text-center col-6"
+              data-wow-delay="0.1s"
+            >
+              <div class="d-flex flex-column align-items-center gap-2">
+                <img
+                  src="../../img/offering/practice.png"
+                  alt="img"
+                  style="width: 50px; height: 50px"
+                />
+                <p>Practice Exercises</p>
+              </div>
+            </div>
+            <div
+              class="col-md-3 wow fadeInUp text-center col-6"
+              data-wow-delay="0.1s"
+            >
+              <div class="d-flex flex-column align-items-center gap-2">
+                <img
+                  src="../../img/offering/q-a.png"
+                  alt="img"
+                  style="width: 50px; height: 50px"
+                />
+                <p>Q&A</p>
+              </div>
+            </div>
+            <div
+              class="col-md-3 wow fadeInUp text-center col-6"
+              data-wow-delay="0.1s"
+            >
+              <div class="d-flex flex-column align-items-center gap-2">
+                <img
+                  src="../../img/offering/certificate.png"
+                  alt="img"
+                  style="width: 50px; height: 50px"
+                />
+                <p>Certification</p>
+              </div>
+            </div>
+            <div
+              class="col-md-3 wow fadeInUp text-center col-6"
+              data-wow-delay="0.1s"
+            >
+              <div class="d-flex flex-column align-items-center gap-2">
+                <img
+                  src="../../img/offering/headphone.png"
+                  alt="img"
+                  style="width: 50px; height: 50px"
+                />
+                <p>Email Support</p>
+              </div>
+            </div>
+            <div
+              class="col-md-3 wow fadeInUp text-center col-6"
+              data-wow-delay="0.1s"
+            >
+              <div class="d-flex flex-column align-items-center gap-2">
+                <img
+                  src="../../img/offering/business.png"
+                  alt="img"
+                  style="width: 50px; height: 50px"
+                />
+                <p>Mock Interview</p>
+              </div>
+            </div>
+            <div
+              class="col-md-3 wow fadeInUp text-center col-6"
+              data-wow-delay="0.1s"
+            >
+              <div class="d-flex flex-column align-items-center gap-2">
+                <img
+                  src="../../img/offering/assignment.png"
+                  alt="img"
+                  style="width: 50px; height: 50px"
+                />
+                <p>Assignments</p>
+              </div>
+            </div>
+            <div
+              class="col-md-3 wow fadeInUp text-center col-6"
+              data-wow-delay="0.1s"
+            >
+              <div class="d-flex flex-column align-items-center gap-2">
+                <img
+                  src="../../img/offering/male.png"
+                  alt="img"
+                  style="width: 50px; height: 50px"
+                />
+                <p>Instructor Led Sessions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      
+      <!-- Demo Class & Career Opportunities Start -->
+      <div class="container-xxl py-5 mt-4">
+        <div class="container">
+          <h2 class="fw-bold text-center mb-5">
+            Book a <span class="text-primary">Free Demo Class</span> to Step Towards Your <span class="text-success">Career Opportunities</span>
+          </h2>
+          <div class="row g-5 align-items-center">
+            <!-- Left Side: Demo Class -->
+            <div class="col-lg-6">
+              <div class="p-4 shadow-sm rounded-3 text-center bg-light">
+                <h4 class="fw-bold mb-3">🎥 Free Demo Class</h4>
+                <p class="text-muted mb-4">
+                  Experience our interactive teaching style and course quality before you enroll. Get clarity on the learning outcomes and benefits.
+                </p>
+                <button class="btn btn-primary btn-lg">Register for Free Demo</button>
+              </div>
+            </div>
+
+            <!-- Right Side: Career Opportunities -->
+            <div class="col-lg-6">
+              <div class="p-4 shadow-sm rounded-3 text-center bg-light">
+                <h4 class="fw-bold mb-3">💼 Career Opportunities</h4>
+                <p class="text-muted mb-4">
+                  Unlock exciting job roles after completing the course. Elevate your career with industry-recognized skills and expertise.
+                </p>
+                <div class="d-flex justify-content-center gap-3 flex-wrap">
+                  <div class="text-center">
+                    <i class="fa-solid fa-mobile-screen fs-3 text-danger mb-2"></i>
+                    <h6>Android Developer </h6>
+                  </div>
+                  <div class="text-center">
+                    <i class="fa-brands fa-react  fs-3 text-info mb-2"></i>
+                    <h6>React Native Developer</h6>
+                  </div>
+                  <div class="text-center">
+                    <i class="fa-brands fa-flutter text-success fs-3 mb-2"></i>
+                    <h6>Flutter Developer </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Demo Class & Career Opportunities End -->
+
+
+      <!-- Certification Section Start -->
+      <div class="container-xxl py-5" style="background: linear-gradient(185deg, #ffffff, #e8efff);">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <!-- Left Side: Image -->
+            <div class="col-lg-6 col-md-12 wow fadeInUp text-center" data-wow-delay="0.5s">
+              <div class="position-relative">
+                <img
+                  class="img-fluid rounded-3 shadow-lg w-100"
+                  src="../../img/certification.png"
+                  alt="Certification"
+                  style="max-height: 350px; object-fit: cover;"
+                />
+              </div>
+            </div>
+
+            <!-- Right Side: Content -->
+            <div class="col-lg-6 col-md-12">
+              <h2 class="fw-bold mb-3">
+                <i class="fa-solid fa-certificate text-primary"></i> Industry-Recognized Certification
+              </h2>
+              <p class="mb-4 text-muted">
+                Earn a globally recognized certification that validates your skills in programming, problem-solving, and cutting-edge technologies. Stand out in the job market and open doors to exciting career opportunities.
+              </p>
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <i class="fa-solid fa-check text-success me-2"></i> Certification Upon Completion
+                </li>
+                <li class="mb-2">
+                  <i class="fa-solid fa-check text-success me-2"></i> Exclusive Roadmap & Bonus Resources
+                </li>
+                <li class="mb-2">
+                  <i class="fa-solid fa-check text-success me-2"></i> Flexible Learning Options
+                </li>
+                <li class="mb-2">
+                  <i class="fa-solid fa-check text-success me-2"></i> Internship & Career Support
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Certification Section End -->
+
+
+
+    <!-- Footer Start -->
+    <div
+      class="container-fluid bg-dark text-white-50 footer mt-5 wow"
+      data-wow-delay="0.1s"
+    >
+    <div class="container py-5">
+      <div class="row g-5">
+        <div class="col-lg-3 col-md-6">
+          <h3 class="text-white mb-3">
+            <img
+              src="../../img/brands/student-1.png"
+              alt="Logo"
+              class="footer-logo"
+            />
+            Inacademic
+          </h3>
+          <p class="mb-2">
+            Are you looking to build a successful career in the tech industry?
+            Look no further! Our platform offers
+            <strong>affordable, industry-focused courses</strong> that prepare
+            you for top positions in MNCs and startups.
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLScHrRci2k0vB-Lyo-h09OJli_QZScjC9waSpYho0_0ffhK59w/viewform?embedded=true"
+              target="_blank"
+              class="join-btn-footer"
+            >
+              Join Now!</a
+            >
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h3 class="text-white mb-4">Quick Links</h3>
+
+          <a
+            class="btn btn-link text-white-50"
+            href="../roadmap.html"
+            >Roadmap </a
+          >
+          <a
+            class="btn btn-link text-white-50"
+            href="../footer/about.html"
+            >About Us</a
+          >
+          <a
+            class="btn btn-link text-white-50"
+            href="../footer/contact.html"
+            >Contact Us</a
+          >
+          <a
+            class="btn btn-link text-white-50"
+            href="../online-courses.html"
+            >Online Courses</a
+          >
+          <a
+            class="btn btn-link text-white-50"
+            href="../../colleges/index.html"
+            >Transforming Colleges</a
+          >
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h3 class="text-white mb-4">Courses We Offer</h3>
+          <div class="row g-2 pt-2">
+            <div class="col-2 col-md3">
+              <a href="./mern.html">
+                <img
+                  class="img-fluid rounded bg-light p-1 footer-course-img"
+                  src="../../img/footer/mern.png"
+                  alt="Mern Stack Course"
+                />
+              </a>
+            </div>
+            <div class="col-2 col-md3">
+              <a href="./dsa.html">
+                <img
+                  class="img-fluid rounded bg-light p-1 footer-course-img"
+                  src="../../img/footer/dsa.jpg"
+                  alt="DSA Course Image"
+                />
+              </a>
+            </div>
+            <div class="col-2 col-md3">
+              <a href="./angular.html">
+                <img
+                  class="img-fluid rounded bg-light p-1 footer-course-img"
+                  src="../../img/footer/angular.png"
+                  alt="Angular Course Image"
+                />
+              </a>
+            </div>
+            <div class="col-2 col-md3">
+              <a href="./javascript.html">
+                <img
+                  class="img-fluid rounded bg-light p-1 footer-course-img"
+                  src="../../img/footer/js.jpg"
+                  alt="JS Course Image"
+                />
+              </a>
+            </div>
+            <div class="col-2 col-md3">
+              <a href="./java.html">
+                <img
+                  class="img-fluid rounded bg-light p-1 footer-course-img"
+                  src="../../img/footer/java.png"
+                  alt="Java Course Image"
+                />
+              </a>
+            </div>
+            <div class="col-2 col-md3">
+              <a href="./react.html">
+                <img
+                  class="img-fluid rounded bg-light p-1 footer-course-img"
+                  src="../../img/footer/react.png"
+                  alt="React Course Image"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h3 class="text-white mb-4">Get In Touch</h3>
+          <p class="mb-2">
+            <i class="fa fa-map-marker-alt me-3"></i>Sector 168, Noida, UP
+          </p>
+          <p class="mb-2">
+            <a class="text-white-50 text-white-2024" href="tel:+919161218740" id="btn-get">
+              <i class="fa fa-phone-alt me-3"></i>
+            +91 9161218740</a>
+          </p>
+          <p class="mb-2">
+            <a target="_blank"
+            href="mailto:hr@inacademic.com" class="text-white-50 text-white-2024"><i class="fa fa-envelope me-3" ></i> hr@inacademic.com</a>
+          </p>
+          </p>
+          <div class="d-flex pt-2">
+            <a
+              class="btn btn-outline-light btn-social"
+              target="_blank"
+              href="https://www.instagram.com/inacademic_official/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              target="_blank"
+              class="btn btn-outline-light btn-social"
+              href="https://www.linkedin.com/company/inacademic"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a class="btn btn-outline-light btn-social" href="#"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              class="btn btn-outline-light btn-social"
+              target="_blank"
+              href="https://www.facebook.com/"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Footer Copyright Section-->
+  <div class="footer-wrapper">
+    <div class="footer-container">
+      <p class="copyright">
+        Copyright &copy; 2024
+        <a href="../../index.html" class="brand">Inacademic</a>. All Rights
+        Reserved.
+      </p>
+      <div class="footer-links">
+        <a href="../footer/terms&condition.html" class="footer-link"
+          >Terms & Condition</a
+        >
+        <span class="divider">|</span>
+        <a target="_blank" href="mailto:hr@inacademic.com" class="footer-link"
+          >Careers</a
+        >
+        <span class="divider">|</span>
+        <a href="../footer/privacy_policy.html
+        " class="footer-link"
+          >Privacy Policy</a
+        >
+      </div>
+    </div>
+  </div>
+  <!-- Footer End -->
+
+  <!-- Back to Top -->
+  <a
+    href="https://wa.me/+919161218740?text=Hello!%20I%20would%20like%20to%20inquire%20about%20the%20courses.%20Can%20you%20provide%20more%20information%3F"
+    target="_blank"
+    id="Whatsapp-button"
+    onmouseover="this.style.backgroundColor='#128c7e'"
+    onmouseout="this.style.backgroundColor='#25d366'"
+    ><i class="fa-brands fa-whatsapp" style="color: white"></i
+  ></a>
+  <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+    ><i class="bi bi-arrow-up"></i
+  ></a>
+    </div>
+    <script>
+      const shareButton = document.getElementById("shareButton");
+
+      shareButton.addEventListener("click", async () => {
+        const currentUrl = window.location.href; // Get the current URL
+        const shareData = {
+          title: document.title, // Get the current page title
+          text: "Check out this page!",
+          url: currentUrl,
+        };
+
+        // Attempt to use the Web Share API
+        if (navigator.share) {
+          try {
+            await navigator.share(shareData);
+            console.log("URL shared successfully!");
+          } catch (err) {
+            console.error("Error sharing:", err);
+          }
+        } else {
+          // Fallback: Copy the URL to the clipboard
+          try {
+            await navigator.clipboard.writeText(currentUrl);
+            alert("URL copied to clipboard!");
+          } catch (err) {
+            console.error("Error copying URL:", err);
+            alert("Failed to copy URL. Please copy it manually: " + currentUrl);
+          }
+        }
+      });
+    </script>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../lib/wow/wow.min.js"></script>
+    <script src="../../lib/easing/easing.min.js"></script>
+    <script src="../../lib/waypoints/waypoints.min.js"></script>
+    <script src="../../lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="../../js/main.js"></script>
+    <script src="../../js/functions.js"></script>
+  </body>
+</html>
