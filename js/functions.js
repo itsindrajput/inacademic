@@ -73,7 +73,7 @@ document
       };
 
       try {
-        const response = await fetch("https://formspree.io/f/xrbbzvgz", {
+        const response = await fetch("https://formspree.io/f/meoonyrl", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -83,7 +83,7 @@ document
 
         if (response.ok) {
           alert("Form submitted successfully!");
-          document.getElementById("appointmentForm").reset(); // Reset the form
+          document.getElementById("appointmentForm").reset();
         } else {
           alert("Failed to submit form. Please try again.");
         }
