@@ -52,6 +52,8 @@
 
     <!-- Template Stylesheet -->
     <link href="../../css/style.css" rel="stylesheet" />
+    <link href="../../css/popup.css" rel="stylesheet" />
+
   </head>
 
   <body>
@@ -138,22 +140,11 @@
             >
           </div>
           <a
-            href="javascript:void(0)"
-            class="btn btn-primary rounded-pill px-3 d-none d-lg-block"
-            id="joinUsButton"
-          >
-            Join Us <i class="fa fa-arrow-right ms-3"></i>
-          </a>
-
-          <!-- Hidden iframe (if you want it to open in the popup instead of embedding) -->
-          <iframe
-            id="formIframe"
-            src="https://docs.google.com/forms/d/e/1FAIpQLScHrRci2k0vB-Lyo-h09OJli_QZScjC9waSpYho0_0ffhK59w/viewform?embedded=true"
-            style="display: none"
-            frameborder="0"
-            marginheight="0"
-            marginwidth="0"
-          ></iframe>
+          class="btn btn-primary rounded-pill px-3 d-none d-lg-block"
+          onclick="openPopup()"
+        >
+          Join Us 🡽
+        </a>
         </div>
       </nav>
       <!-- Navbar End -->

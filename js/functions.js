@@ -10,16 +10,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-document.getElementById("joinUsButton").addEventListener("click", function () {
-  const url =
-    "https://docs.google.com/forms/d/e/1FAIpQLScHrRci2k0vB-Lyo-h09OJli_QZScjC9waSpYho0_0ffhK59w/viewform?embedded=true";
 
-  window.open(
-    url,
-    "JoinUsForm",
-    "width=500,height=600,scrollbars=yes,resizable=no"
-  );
-});
+// document.getElementById("joinUsButton").addEventListener("click", function () {
+//   const url =
+//     "https://docs.google.com/forms/d/e/1FAIpQLScHrRci2k0vB-Lyo-h09OJli_QZScjC9waSpYho0_0ffhK59w/viewform?embedded=true";
+
+//   window.open(
+//     url,
+//     "JoinUsForm",
+//     "width=500,height=600,scrollbars=yes,resizable=no"
+//   );
+// });
 
 document
   .getElementById("appointmentForm")
