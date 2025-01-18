@@ -1185,3 +1185,11 @@ h6,
   padding: 0.3rem 0.6rem;
   border-radius: 0 0.5rem 0.5rem 0;
 }
+@media screen and (max-width: 1199px) {
+  #firstsec {
+    margin-top: -40px;
+  }
+  #firstsec_part {
+    margin-top: 10px;
+  }
+}
