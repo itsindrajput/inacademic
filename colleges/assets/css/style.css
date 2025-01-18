@@ -964,6 +964,7 @@ input {
   background-color: var(--smoke-color);
   border-radius: 4px;
   font-size: 16px;
+  border-color: var(--gray-color);
   width: 100%;
   font-family: var(--body-font);
   -webkit-transition: 0.4s ease-in-out;
